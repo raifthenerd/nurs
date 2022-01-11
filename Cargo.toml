@@ -1,0 +1,20 @@
+[package]
+name = "nurs"
+version = "0.1.0"
+authors = ["Seokjin Han <seokjin.han@standigm.com>"]
+edition = "2021"
+description = "nurs makes srun easy to use with predefined configurations."
+readme = "README.md"
+homepage = "https://github.com/raifthenerd/nurs"
+repository = "https://github.com/raifthenerd/nurs"
+license = "BSD-3-Clause"
+keywords = ["slurm", "cluster", "hpc"]
+categories = ["command-line-utilities", "config"]
+
+[dependencies]
+
+[profile.release]
+debug = 0
+lto = true
+opt-level = 3
+codegen-units = 1
