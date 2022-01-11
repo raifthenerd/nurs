@@ -3,7 +3,7 @@ name = "nurs"
 version = "0.1.0"
 authors = ["Seokjin Han <seokjin.han@standigm.com>"]
 edition = "2021"
-description = "nurs makes srun easy to use with predefined configurations."
+description = "nurs makes srun easy to use with predefined configurations"
 readme = "README.md"
 homepage = "https://github.com/raifthenerd/nurs"
 repository = "https://github.com/raifthenerd/nurs"
@@ -12,6 +12,13 @@ keywords = ["slurm", "cluster", "hpc"]
 categories = ["command-line-utilities", "config"]
 
 [dependencies]
+clap = { version = "3.0", features = ["derive"] }
+anyhow = "1"
+log = { version = "0.4", features = ["max_level_debug"]}
+log4rs = "1"
+directories-next = "2"
+toml = "0.5"
+serde = { version = "1", features = ["derive"] }
 
 [profile.release]
 debug = 0
